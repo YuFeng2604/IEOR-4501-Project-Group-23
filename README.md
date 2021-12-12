@@ -14,16 +14,16 @@ New York City publishes a dataset consisting of calls to the 311 phone number fo
 
 What Has Been Implemented
 -----------------------
-In the first Jupyter notebook called `Top10.ipynb`, we read the csv file and convert the `Unique Key` column to the index of our Pandas DataFrame. Secondly, we fix the zip codes after observing that "10030" is incorrectly coded as "12345". Then we analyze what the top 10 causes of calls to 311 are in our chosen ZIP code 10027, and calculate how many total incidents of each of these 10 types there have been in the year 2020. More than that, we verify the data type, index names, and values of `top10` at the last part of "Data Analysis".
+In the first Jupyter notebook called `Top10.ipynb`, we read the csv file and convert the `Unique Key` column to the index of our Pandas DataFrame. Secondly, we fix the ZIP codes after observing that `"10030"` is incorrectly coded as `"12345"` and that there are some invalid ZIP codes, such as "83". Then we analyze what the top 10 causes of calls to 311 are in our chosen ZIP code 10027, and calculate how many total incidents of each of these 10 types there have been in the year 2020. More than that, we verify the data type, index names, and values of `top10` at the last part of "Data Analysis".
 
-In a second Jupyter notebook called `Parking.ipynb`, we want to analyze whether illegal parking incidents are a larger fraction of total 311 incidents in ZIP code 10027 than they are in general. Specifically, we compute the total number of parking incidents in ZIP 10027, which is assigned to variable `parking_cu`, and the total number of all incidents, which is assigned to variable `total_cu`. Simultaneously, assign a variable `parking_nyc`, which stands for the number of parking incidents across all ZIP codes, and a variable `total_nyc` for the total number of all incidents. Finally, our answer is in the form of a single bool called `higher_parking_proportion`, which is `False` because our ZIP 10027 contains a lower proportion of parking incidents than the global value.
+In a second Jupyter notebook called `Parking.ipynb`, we analyze whether illegal parking incidents are a larger fraction of total 311 incidents in ZIP 10027 than they are in general. Specifically, we compute the total number of parking incidents in ZIP 10027, which is assigned to variable `parking_cu`, and the total number of all incidents in ZIP 10027, which is assigned to variable `total_cu`. Simultaneously, we create a variable `parking_nyc` for the number of parking incidents across all ZIP codes and a variable `total_nyc` for the total number of all incidents. Finally, our answer is a boolean variable called `higher_parking_proportion`, which is `False` because our ZIP 10027 contains a lower proportion of parking incidents than the city-level value.
 
-Team Members of Project Group 23
+Team Members of Project Group 23 in Section 1
 --------------------------------
-[Andy Chen]   
-ac4952   
-andy.chen@columbia.edu   
+### Andy Chen 
+- ac4952   
+- andy.chen@columbia.edu   
    
-[Yu Feng]   
-yf2604   
-yf2604@columbia.edu
+### Yu Feng   
+- yf2604   
+- yf2604@columbia.edu
